@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Forest Lounge – кальянная в ЖК «Измайловский лес», Балашиха</title>
+<meta name="description" content="Forest Lounge: кальяны, авторские чаи и лимонады в ЖК «Измайловский лес». Балашиха, Реутовская ул., 15. Ежедневно с 13:00, в пятницу и субботу до 03:00. +7 (936) 267-77-73">
+<meta name="theme-color" content="#0c1e18">
+<meta property="og:title" content="Forest Lounge – лес прямо в вашем ЖК">
+<meta property="og:description" content="Кальяны, авторские чаи и камин. Балашиха, Реутовская ул., 15">
+<meta property="og:image" content="img/hd/hero-wide.webp">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+SC:wght@500;600;700&family=Cormorant+Garamond:ital,wght@1,500&family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hd/hero-wide.webp" media="(min-width: 761px)">
+<link rel="preload" as="image" href="img/hd/hero-tall.webp" media="(max-width: 760px)">
+<link rel="stylesheet" href="styles.css">
+<script>
+  document.documentElement.className += ' js';
+  try { if (localStorage.getItem('forest-age') === 'yes') document.documentElement.className += ' age-ok'; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Forest Lounge",
+  "telephone": "+79362677773",
+  "address": {"@type": "PostalAddress", "streetAddress": "Реутовская ул., 15", "addressLocality": "Балашиха", "addressRegion": "Московская область", "addressCountry": "RU"},
+  "geo": {"@type": "GeoCoordinates", "latitude": 55.783782, "longitude": 37.84763},
+  "openingHours": ["Mo-Th 13:00-02:00", "Fr-Sa 13:00-03:00", "Su 13:00-02:00"],
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "ratingCount": "110"}
+}
+</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wave" viewBox="0 0 120 14"><path d="M2 9c14-8 26-8 40-2s26 6 40 0 24-6 36 1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 12c12-5 22-5 34 0s22 4 34 0" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity=".6"/></symbol>
+  <symbol id="pine" viewBox="0 0 24 28"><path d="M12 1l5 7h-3l5 6h-3l5 7H3l5-7H5l5-6H7z" fill="currentColor"/><rect x="11" y="21" width="2" height="6" fill="currentColor"/></symbol>
+</svg>
+
+<div class="age" id="age" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+  <div class="age__box">
+    <img src="img/emblem.svg" alt="Forest Lounge" class="age__logo" width="236" height="213">
+    <div id="ageAsk">
+      <p class="age__title" id="ageTitle">Вам уже есть 18?</p>
+      <p class="age__text">На&nbsp;сайте есть информация о&nbsp;кальянах и&nbsp;алкоголе, поэтому он&nbsp;только для взрослых гостей.</p>
+      <div class="age__btns">
+        <button type="button" class="btn btn--gold" id="ageYes">Да, мне есть 18</button>
+        <button type="button" class="btn btn--line" id="ageNo">Нет</button>
+      </div>
+    </div>
+    <div id="ageDeny" hidden>
+      <p class="age__title">Будем ждать вас позже</p>
+      <p class="age__text">К&nbsp;сожалению, сайт доступен только совершеннолетним.</p>
+    </div>
+  </div>
+</div>
+
+<header class="top">
+  <div class="top__in">
+    <a href="#top" class="top__logo" aria-label="Forest Lounge"><img src="img/emblem.svg" alt="" width="46" height="38"><span>Forest<small>lounge</small></span></a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#hookah">Кальяны</a>
+      <a href="#tea">Чай и&nbsp;десерты</a>
+      <a href="#walk">Атмосфера</a>
+      <a href="#home">Как дома</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+      <a href="tel:+79362677773" class="nav__phone">+7 (936) 267-77-73</a>
+    </nav>
+    <a href="tel:+79362677773" class="btn btn--gold btn--sm top__cta">Забронировать</a>
+    <button class="burger" id="burger" aria-label="Меню навигации" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <picture class="hero__bg">
+    <source media="(max-width: 760px)" srcset="img/hd/hero-tall.webp">
+    <img src="img/hd/hero-wide.webp" alt="Зелёные кольца из живых растений под потолком лаунжа" fetchpriority="high">
+  </picture>
+  <div class="fireflies" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+  <!-- лампа-индикатор: горит, когда открыто -->
+  <div class="lamp" id="lamp" aria-live="polite">
+    <svg class="lamp__svg" viewBox="0 0 60 120" aria-hidden="true">
+      <line x1="30" y1="0" x2="30" y2="52" class="lamp__cord"/>
+      <path d="M18 52h24l10 26H8z" class="lamp__shade"/>
+      <ellipse cx="30" cy="84" rx="9" ry="10" class="lamp__bulb"/>
+      <circle cx="30" cy="86" r="34" class="lamp__glow"/>
+    </svg>
+    <p class="lamp__text"><b id="lampState">Свет горит</b><span id="lampTime">до 02:00</span></p>
+  </div>
+
+  <div class="hero__in">
+    <p class="hero__place">ЖК «Измайловский лес» · Балашиха</p>
+    <h1 class="lockup">
+      <img class="lockup__emblem" src="img/emblem.svg" alt="" width="236" height="213">
+      <span class="lockup__name">Forest</span>
+      <span class="lockup__sub"><svg aria-hidden="true"><use href="#wave"/></svg>Lounge<svg class="flip" aria-hidden="true"><use href="#wave"/></svg></span>
+    </h1>
+    <p class="hero__lead">Лес прямо в&nbsp;вашем ЖК. Дым, зелень и&nbsp;тёплый камин в&nbsp;двух шагах от&nbsp;дома.</p>
+    <div class="hero__actions">
+      <a href="tel:+79362677773" class="btn btn--gold">Забронировать стол</a>
+      <a href="#hookah" class="btn btn--line">Кальяны</a>
+    </div>
+    <a class="hero__rating" href="https://yandex.ru/maps/org/forest_launzh/118181906827/reviews/" target="_blank" rel="noopener">
+      <b>5,0</b><span class="stars" aria-hidden="true">★★★★★</span><span>110 оценок на&nbsp;Яндекс Картах</span>
+    </a>
+  </div>
+  <a href="#about" class="scroll" aria-label="Листать вниз"><span></span></a>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>Кальяны под ваш вкус</span><svg><use href="#pine"/></svg><span>Авторские чаи</span><svg><use href="#pine"/></svg><span>Камин</span><svg><use href="#pine"/></svg><span>Приставка и&nbsp;настолки</span><svg><use href="#pine"/></svg><span>Можно со&nbsp;своим</span><svg><use href="#pine"/></svg><span>Пт и&nbsp;сб до&nbsp;03:00</span><svg><use href="#pine"/></svg>
+    <span>Кальяны под ваш вкус</span><svg><use href="#pine"/></svg><span>Авторские чаи</span><svg><use href="#pine"/></svg><span>Камин</span><svg><use href="#pine"/></svg><span>Приставка и&nbsp;настолки</span><svg><use href="#pine"/></svg><span>Можно со&nbsp;своим</span><svg><use href="#pine"/></svg><span>Пт и&nbsp;сб до&nbsp;03:00</span><svg><use href="#pine"/></svg>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about__grid">
+    <div class="about__text reveal">
+      <p class="label"><svg><use href="#pine"/></svg>О&nbsp;месте</p>
+      <h2 class="h2">Тихая поляна <em>после шумного дня</em></h2>
+      <p class="lead">Живая зелень под потолком, изумрудный бархат и&nbsp;огонь в&nbsp;камине. Приглушённый свет, спокойный лаунж и&nbsp;вытяжка, которая правда работает.</p>
+      <ul class="facts">
+        <li><b>до 03:00</b><span>в&nbsp;пятницу и&nbsp;субботу</span></li>
+        <li><b>5,0</b><span>рейтинг на&nbsp;Яндекс Картах</span></li>
+        <li><b>до 11</b><span>столов, без тесноты</span></li>
+      </ul>
+    </div>
+    <div class="about__pics">
+      <figure class="ring ring--big reveal"><img src="img/hd/hall-ring.webp" alt="Зал под зелёным кольцом с тёплым светом" loading="lazy"></figure>
+      <figure class="ring ring--small reveal"><img src="img/hd/fireplace.webp" alt="Камин и бархатные кресла" loading="lazy"></figure>
+      <span class="about__badge reveal"><b>камин</b>и&nbsp;бархатные кресла</span>
+    </div>
+  </div>
+</section>
+
+<!-- HOOKAH -->
+<section class="hookah" id="hookah">
+  <div class="wrap">
+    <div class="head head--center reveal">
+      <p class="label"><svg><use href="#pine"/></svg>Кальяны</p>
+      <h2 class="h2">Дым, который <em>подбирают под вас</em></h2>
+      <svg class="wave" aria-hidden="true"><use href="#wave"/></svg>
+      <p class="lead">Мастер спросит о&nbsp;крепости и&nbsp;вкусе, сам подойдёт поменять угли и&nbsp;узнает, всё&nbsp;ли нравится.</p>
+    </div>
+    <div class="hk">
+      <article class="hk__card reveal">
+        <div class="hk__img"><img src="img/hd/tobacco.webp" alt="Стена с банками табака" loading="lazy"></div>
+        <div class="hk__body">
+          <h3>Под ваш вкус</h3>
+          <p>Большая стена табаков. Скажите, что любите, и&nbsp;мастер соберёт чашу с&nbsp;нужной крепостью.</p>
+        </div>
+      </article>
+      <article class="hk__card hk__card--accent reveal">
+        <div class="hk__img"><img src="img/hd/hookah-teal.webp" alt="Кальян на фоне бирюзового дивана" loading="lazy"></div>
+        <div class="hk__body">
+          <p class="tagline">Фирменная подача</p>
+          <h3>Ананасовый рай</h3>
+          <p>Кальян в&nbsp;свежем ананасе, который чистим вручную. Мягкий бархатный дым с&nbsp;тропической сладостью и&nbsp;цитрусовой свежестью.</p>
+        </div>
+      </article>
+      <article class="hk__card reveal">
+        <div class="hk__img"><img src="img/hd/flasks.webp" alt="Разноцветные колбы кальянов" loading="lazy"></div>
+        <div class="hk__body">
+          <h3>Кальян с&nbsp;собой</h3>
+          <p>Можно взять кальян в&nbsp;аренду для вечера дома. Подробности по&nbsp;телефону.</p>
+        </div>
+      </article>
+    </div>
+
+    <ol class="ritual">
+      <li class="reveal"><span>01</span><b>Знакомство</b>Расскажите, что любите: фрукты, свежесть, десерт, крепче или мягче.</li>
+      <li class="reveal"><span>02</span><b>Забивка</b>Мастер собирает чашу при вас и&nbsp;проверяет тягу.</li>
+      <li class="reveal"><span>03</span><b>Угли</b>Меняем сами, не&nbsp;нужно звать. Есть кнопка вызова персонала.</li>
+      <li class="reveal"><span>04</span><b>Вечер</b>Чай, лимонад и&nbsp;огонь в&nbsp;камине. Дальше только отдыхать.</li>
+    </ol>
+    <p class="hk__note">Актуальные цены подскажет администратор: <a href="tel:+79362677773">+7&nbsp;(936)&nbsp;267-77-73</a></p>
+  </div>
+</section>
+
+<!-- TEA -->
+<section class="tea" id="tea">
+  <div class="wrap tea__grid">
+    <div class="tea__text">
+      <div class="reveal">
+        <p class="label"><svg><use href="#pine"/></svg>Чай, лимонады, десерты</p>
+        <h2 class="h2">К&nbsp;кальяну <em>по-лесному</em></h2>
+      </div>
+      <ul class="drinks">
+        <li class="reveal"><b>Авторские чаи</b><span>Поинтересуйтесь составом и&nbsp;попробуйте всю карту по&nbsp;очереди.</span></li>
+        <li class="reveal"><b>Лимонад клубника-фейхоа</b><span>Хит сезона: спелая ягода и&nbsp;свежая кислинка с&nbsp;тропическими нотами.</span></li>
+        <li class="reveal"><b>Смузи</b><span>Из&nbsp;натуральных ингредиентов, а&nbsp;не&nbsp;из&nbsp;сиропов.</span></li>
+        <li class="reveal"><b>Кофе</b><span>Можно взять с&nbsp;собой.</span></li>
+      </ul>
+      <div class="dessert reveal">
+        <p class="dessert__t">Десерты из&nbsp;витрины</p>
+        <p class="dessert__row"><span>Муссовый «Малина – белый шоколад»</span><i></i><b>350&nbsp;₽</b></p>
+        <p class="dessert__row"><span>Муссовый десерт</span><i></i><b>350&nbsp;₽</b></p>
+      </div>
+    </div>
+    <div class="tea__pics">
+      <figure class="ring ring--tall reveal"><img src="img/hd/tea.webp" alt="Ягодный чай в чашке и чайник на подогреве" loading="lazy"></figure>
+      <figure class="ring ring--round reveal"><img src="img/hd/desserts.webp" alt="Витрина с десертами" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- WALK: галерея -->
+<section class="walk" id="walk">
+  <div class="wrap walk__head">
+    <div class="reveal">
+      <p class="label"><svg><use href="#pine"/></svg>Атмосфера</p>
+      <h2 class="h2">Прогулка <em>по&nbsp;лесу</em></h2>
+    </div>
+    <div class="walk__nav">
+      <button class="arrow" id="walkPrev" aria-label="Назад">←</button>
+      <button class="arrow" id="walkNext" aria-label="Вперёд">→</button>
+    </div>
+  </div>
+  <div class="walk__track" id="walkTrack">
+    <figure class="w w--tall"><img src="img/hd/rings.webp" alt="Подвесные зелёные кольца" loading="lazy"><figcaption>Живые кольца под потолком</figcaption></figure>
+    <figure class="w"><img src="img/hd/grove.webp" alt="Деревья и зелёная арка с подсветкой" loading="lazy"><figcaption>Своя роща и&nbsp;пеньки</figcaption></figure>
+    <figure class="w w--tall"><img src="img/hd/lamps.webp" alt="Тёплые лампы и мандариновое дерево" loading="lazy"><figcaption>Тёплый свет вечером</figcaption></figure>
+    <figure class="w w--wide"><img src="img/hd/lemonades.webp" alt="Лимонады в дыму" loading="lazy"><figcaption>Лимонады в&nbsp;дыму</figcaption></figure>
+    <figure class="w"><img src="img/hd/hookah-tea.webp" alt="Кальян и чай у панорамного окна" loading="lazy"><figcaption>Кальян у&nbsp;окна</figcaption></figure>
+    <figure class="w w--wide"><img src="img/hd/day-hall.webp" alt="Светлый зал днём" loading="lazy"><figcaption>Днём светло и&nbsp;спокойно</figcaption></figure>
+    <figure class="w w--tall"><img src="img/hd/window-rings.webp" alt="Кольца и книжные стеллажи у окна" loading="lazy"><figcaption>Уголок у&nbsp;стеллажей</figcaption></figure>
+    <figure class="w"><img src="img/hd/alley.webp" alt="Проход с зеленью и лампами" loading="lazy"><figcaption>Лесная тропинка</figcaption></figure>
+  </div>
+</section>
+
+<!-- AT HOME -->
+<section class="home" id="home">
+  <div class="wrap">
+    <div class="head head--center reveal">
+      <p class="label"><svg><use href="#pine"/></svg>Как дома</p>
+      <h2 class="h2">Приходите <em>со&nbsp;своим</em></h2>
+      <svg class="wave" aria-hidden="true"><use href="#wave"/></svg>
+    </div>
+    <div class="homes">
+      <article class="h-card reveal">
+        <span class="h-card__n">01</span>
+        <h3>Любая еда</h3>
+        <p>Закажите доставку прямо к&nbsp;нам. Тарелки, приборы и&nbsp;лёд дадим.</p>
+      </article>
+      <article class="h-card reveal">
+        <span class="h-card__n">02</span>
+        <h3>Свои напитки</h3>
+        <p>Можно со&nbsp;своим алкоголем, есть небольшой пробковый сбор.</p>
+      </article>
+      <article class="h-card reveal">
+        <span class="h-card__n">03</span>
+        <h3>Игры и&nbsp;матчи</h3>
+        <p>Приставка, настольные игры и&nbsp;спортивные трансляции.</p>
+      </article>
+      <article class="h-card h-card--pic reveal">
+        <img src="img/hd/laptop.webp" alt="Ноутбук и кальян на столике" loading="lazy">
+        <div>
+          <span class="h-card__n">04</span>
+          <h3>Можно поработать</h3>
+          <p>Wi-Fi, зарядка для телефона и&nbsp;место для ноутбука.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="reviews__head reveal">
+      <div>
+        <p class="label"><svg><use href="#pine"/></svg>Отзывы</p>
+        <h2 class="h2">Соседи <em>рекомендуют</em></h2>
+      </div>
+      <div class="score"><b>5,0</b><span><span class="stars" aria-hidden="true">★★★★★</span>78 отзывов · 110 оценок<br>на&nbsp;Яндекс Картах</span></div>
+    </div>
+    <div class="quotes">
+      <figure class="q q--big reveal">
+        <blockquote>Если хотите отдохнуть от&nbsp;повседневной рутины, провести деловую встречу или время вдвоём или с&nbsp;друзьями, то&nbsp;это идеальное место! Обстановка как дома.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 28 августа</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Очень зелёное место и&nbsp;много растительности. Всё очень чисто, даже нет пыли на&nbsp;растениях. Очень хорошо работает вытяжка.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 18 ноября 2025</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Впервые почувствовала настолько насыщенный и&nbsp;яркий вкус кальяна. Смузи сделан из&nbsp;натуральных ингредиентов, а&nbsp;не&nbsp;просто из&nbsp;сиропов.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 15 июня</span></figcaption>
+      </figure>
+      <figure class="q reveal">
+        <blockquote>Теперь будем знать, где провести вечер в&nbsp;ЖК эстетично, вкусно и&nbsp;не&nbsp;отходя от&nbsp;дома.</blockquote>
+        <figcaption><b>Гость</b><span>Яндекс Карты · 19 октября 2025</span></figcaption>
+      </figure>
+    </div>
+    <a class="more" href="https://yandex.ru/maps/org/forest_launzh/118181906827/reviews/" target="_blank" rel="noopener">Все отзывы на&nbsp;Яндекс Картах&nbsp;→</a>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts" id="contacts">
+  <div class="wrap contacts__grid">
+    <div class="reveal">
+      <p class="label"><svg><use href="#pine"/></svg>Контакты</p>
+      <h2 class="h2">Ждём <em>в&nbsp;лесу</em></h2>
+      <dl class="info">
+        <div><dt>Адрес</dt><dd>Балашиха, Реутовская ул., 15<span class="sub">ЖК «Измайловский лес», первый этаж</span></dd></div>
+        <div><dt>Телефон</dt><dd><a href="tel:+79362677773">+7 (936) 267-77-73</a></dd></div>
+        <div><dt>Оплата</dt><dd>Карта, наличные, перевод, QR-код</dd></div>
+      </dl>
+      <ul class="week" id="week" aria-label="Часы работы"></ul>
+      <div class="contacts__actions">
+        <a href="tel:+79362677773" class="btn btn--gold">Позвонить</a>
+        <a href="https://t.me/forestloungee" target="_blank" rel="noopener" class="btn btn--line">Telegram</a>
+        <a href="https://yandex.ru/maps/org/forest_launzh/118181906827/" target="_blank" rel="noopener" class="btn btn--line">Маршрут</a>
+      </div>
+      <figure class="find">
+        <img src="img/hd/neon.webp" alt="Вход с зелёной неоновой вывеской «Форест лаунж»" loading="lazy">
+        <figcaption>Ищите зелёную неоновую вывеску <b>«Форест»</b> на&nbsp;первом этаже дома. Рядом парковка, вход доступен для гостей на&nbsp;коляске.</figcaption>
+      </figure>
+    </div>
+    <div class="map reveal">
+      <iframe title="Forest Lounge на Яндекс Картах" src="https://yandex.ru/map-widget/v1/?ll=37.84763%2C55.783782&z=16&pt=37.84763%2C55.783782%2Cpm2dgl" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <a href="#top" class="lockup lockup--foot" aria-label="Forest Lounge">
+      <img class="lockup__emblem" src="img/emblem.svg" alt="" width="236" height="213" loading="lazy">
+      <span class="lockup__name">Forest</span>
+      <span class="lockup__sub"><svg aria-hidden="true"><use href="#wave"/></svg>Lounge<svg class="flip" aria-hidden="true"><use href="#wave"/></svg></span>
+    </a>
+    <nav class="footer__nav" aria-label="Разделы">
+      <a href="#hookah">Кальяны</a><a href="#tea">Чай и&nbsp;десерты</a><a href="#walk">Атмосфера</a><a href="#contacts">Контакты</a>
+    </nav>
+    <div class="footer__meta">
+      <a href="tel:+79362677773">+7 (936) 267-77-73</a>
+      <span>Балашиха, Реутовская ул., 15</span>
+    </div>
+  </div>
+  <div class="wrap footer__legal">
+    <span>© Forest Lounge</span>
+    <span>18+ · Информация на&nbsp;сайте носит справочный характер и&nbsp;не&nbsp;является рекламой. Чрезмерное употребление алкоголя вредит вашему здоровью.</span>
+  </div>
+</footer>
+
+<div class="dock" aria-label="Быстрые действия">
+  <a href="tel:+79362677773">Позвонить</a>
+  <a href="https://t.me/forestloungee" target="_blank" rel="noopener">Telegram</a>
+  <a href="https://yandex.ru/maps/org/forest_launzh/118181906827/" target="_blank" rel="noopener">Маршрут</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
